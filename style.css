@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.bg-container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.headBg {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.kayak {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 90px;
+}
+
+.logo-text {
+  background-color: #ffffff;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.bg-logo {
+  width: 700px;
+  height: 400px;
+}
+.logo-description {
+  display: flex;
+  flex-direction: column;
+}
+.logo-description h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+}
+.logo-description h1 span {
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 400;
+}
+.footer-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.montagne {
+  position: relative;
+  top: 124px;
+  left: 146px;
+  z-index: 2;
+}
+.green-footer {
+  width: 100%;
+  position: relative;
+  left: -120px;
+  bottom: -150px;
+  z-index: 3;
+}
+.two-men {
+  position: relative;
+  top: 150px;
+  right: 0;
+  left: -299px;
+  bottom: 0;
+  z-index: 4;
+}
