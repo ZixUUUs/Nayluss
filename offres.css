@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+a:visited {
+  text-decoration: none;
+}
+section {
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  max-width: 1600px;
+  height: 163px;
+  margin: 0 auto;
+}
+.headBg {
+  max-width: 1600px;
+  width: 1600px;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.kayak {
+  max-width: 100%;
+  width: 275px;
+  height: 300px;
+  position: absolute;
+  top: -25px;
+  right: 54px;
+  z-index: 3;
+}
+footer {
+  position: relative;
+  max-width: 1600px;
+  height: 163px;
+  margin: 0 auto;
+}
+.green-footer {
+  width: 1600px;
+  max-width: 1600px;
+  height: 180px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+.all-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+.bg-container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*Offres section */
+.footer-header-bg {
+  position: absolute;
+}
+.offre-container {
+  position: absolute;
+  top: 170px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  z-index: 3;
+}
+.offre {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  border: 1px solid gray;
+}
