@@ -8,23 +8,35 @@
   padding: 0;
   margin: 0;
 }
+
+a:visited {
+  text-decoration: none;
+}
 section {
-  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   height: 100vh;
+  overflow: hidden;
 }
+
 .bg-container-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .main-hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.all-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
 .header-container {
   display: flex;
   flex-direction: column;
@@ -32,6 +44,8 @@ section {
   width: 100%;
 }
 .headBg {
+  max-width: 1600px;
+  width: 1600px;
   position: relative;
   top: 0;
   right: 0;
@@ -39,24 +53,24 @@ section {
   bottom: 0;
 }
 .kayak {
-  width: 500px;
-  height: 100px;
+  max-width: 100%;
+  width: 275px;
+  height: 300px;
   position: absolute;
-  top: 0;
-  right: 90px;
+  top: -18px;
+  right: 43px;
 }
 
 .logo-text {
-  background-color: #ffffff;
   position: absolute;
-  top: 110px;
+  top: 75px;
   width: 100%;
   height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 .bg-logo {
@@ -66,6 +80,36 @@ section {
 .logo-description {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+}
+.btn-offers {
+  align-self: center;
+}
+.btn-offers a {
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 400;
+  color: #ffffff;
+  width: 300px;
+  border-radius: 100px;
+  background-color: #19aaee;
+  padding: 16px 32px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  -webkit-box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  -moz-box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  transition: all 0.3s ease-in-out;
+}
+.btn-offers a:hover {
+  box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  -webkit-box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  -moz-box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  border: 1px solid #19aaee;
+  color: #19aaee;
+  background-color: #ffffff;
 }
 .logo-description h1 {
   font-family: "Montserrat", sans-serif;
@@ -85,23 +129,27 @@ section {
   width: 100%;
 }
 .montagne {
+  max-width: 100%;
   position: relative;
-  top: 124px;
-  left: 146px;
-  z-index: 2;
+  height: 300px;
+  top: 364px;
+  left: -328px;
+  z-index: 3;
 }
 .green-footer {
-  width: 100%;
-  position: relative;
-  left: -120px;
-  bottom: -150px;
-  z-index: 3;
+  width: 1600px;
+  max-width: 1600px;
+  height: 180px;
+  position: absolute;
+  left: -328px;
+  bottom: -300px;
+  z-index: 4;
 }
 .two-men {
   position: relative;
-  top: 150px;
+  top: 274px;
   right: 0;
-  left: -299px;
+  left: 336px;
   bottom: 0;
-  z-index: 4;
+  z-index: 3;
 }

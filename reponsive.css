@@ -1,0 +1,155 @@
+@media screen and (max-width: 1300px) {
+  .headBg {
+    max-width: 1300px;
+  }
+  .kayak {
+    max-width: 100%;
+    width: 275px;
+    height: 263px;
+    position: absolute;
+    top: -18px;
+    right: 43px;
+  }
+  .bg-logo {
+    width: 630px;
+    height: 385px;
+  }
+  .green-footer {
+    max-width: 1300px;
+    left: -182px;
+  }
+  .montagne {
+    max-width: 100%;
+    position: relative;
+    height: 300px;
+    top: 388px;
+    left: -155px;
+    z-index: 3;
+  }
+  .two-men {
+    position: relative;
+    top: 274px;
+    right: 0;
+    left: 183px;
+    bottom: 0;
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 990px) {
+  .headBg {
+    max-width: 990px;
+  }
+  .montagne {
+    max-width: 100%;
+    position: relative;
+    height: 300px;
+    top: 388px;
+    left: -340px;
+    z-index: 3;
+  }
+  .two-men {
+    position: absolute;
+    top: 358px;
+    right: 0;
+    left: 435px;
+    bottom: 0;
+    z-index: 3;
+    width: 300px;
+    height: 300px;
+  }
+  .green-footer {
+    max-width: 990px;
+    left: -252px;
+    top: 529px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .headBg {
+    max-width: 750px;
+  }
+  .kayak {
+    max-width: 100%;
+    width: 231px;
+    height: 129px;
+    position: absolute;
+    top: -1px;
+    right: 14px;
+  }
+  .bg-logo {
+    width: 419px;
+    height: 276px;
+  }
+  .logo-description h1 {
+    font-size: large;
+    line-height: 29px;
+  }
+  .btn-offers a {
+    font-size: large;
+    padding: 12px 28px;
+  }
+  .montagne {
+    max-width: 100%;
+    position: relative;
+    height: 250px;
+    top: 454px;
+    left: -247px;
+    z-index: 3;
+  }
+  .two-men {
+    position: absolute;
+    top: 401px;
+    right: 0;
+    left: 309px;
+    bottom: 0;
+    z-index: 3;
+    width: 269px;
+    height: 269px;
+  }
+  .green-footer {
+    max-width: 750px;
+    left: -173px;
+    top: 566px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headBg {
+    max-width: 475px;
+  }
+  .kayak {
+    max-width: 100%;
+    width: 150px;
+    height: 129px;
+    position: absolute;
+    top: -14px;
+    right: 14px;
+  }
+  .logo-text {
+    position: absolute;
+    top: 151px;
+    left: 13px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .bg-logo {
+    width: 319px;
+    height: 250px;
+  }
+  .logo-description h1 {
+    font-size: medium;
+    line-height: 28px;
+  }
+  .montagne {
+    display: none;
+  }
+  .green-footer {
+    display: none;
+    max-width: 475px;
+    left: -238px;
+    top: 600px;
+  }
+}
