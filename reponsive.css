@@ -112,6 +112,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .main-hero {
+    height: 100vh;
+  }
   .headBg {
     max-width: 475px;
   }
@@ -125,7 +128,7 @@
   }
   .logo-text {
     position: absolute;
-    top: 151px;
+    top: 90px;
     left: 13px;
     width: 100%;
     height: 60%;
@@ -146,10 +149,18 @@
   .montagne {
     display: none;
   }
-  .green-footer {
+  .two-men {
     display: none;
-    max-width: 475px;
-    left: -238px;
-    top: 600px;
+  }
+  .footer {
+    display: flex;
+  }
+  .green-footer {
+    display: flex;
+    position: relative;
+    max-width: 500px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
   }
 }
