@@ -166,23 +166,3 @@ section {
   bottom: 0;
   z-index: 3;
 }
-
-/*Offres section */
-header {
-  position: relative;
-  z-index: 3;
-}
-footer {
-  position: relative;
-  z-index: 3;
-}
-.section-offre {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-}
-.offre {
-  width: 80%;
-  height: 300px;
-  border: 1px solid gray;
-}
