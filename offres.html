@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nayluss</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="offres.css" />
     <script src="Main.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./swiper.js" defer></script>
   </head>
   <body>
     <header class="hidden">
@@ -23,53 +32,58 @@
       <div class="all-bg bg-container-img">
         <img src="./Images/big background 1.png" alt="all" />
       </div>
-      <div class="offre-container">
-        <div class="offre">
-          <div class="pic-offre"></div>
-          <div class="disc-offre">
-            <div class="discription"></div>
-            <div class="offre-prix">
-              <div class="supplement"></div>
-              <div class="prix"></div>
+      <div class="offre-container swiper">
+        <div class="swiper-wrapper">
+          <div class="offre swiper-slide hidden">
+            <div class="pic-offre"></div>
+            <div class="disc-offre">
+              <div class="discription"></div>
+              <div class="offre-prix">
+                <div class="supplement"></div>
+                <div class="prix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="offre swiper-slide hidden">
+            <div class="pic-offre"></div>
+            <div class="disc-offre">
+              <div class="discription"></div>
+              <div class="offre-prix">
+                <div class="supplement"></div>
+                <div class="prix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="offre swiper-slide hidden">
+            <div class="pic-offre"></div>
+            <div class="disc-offre">
+              <div class="discription"></div>
+              <div class="offre-prix">
+                <div class="supplement"></div>
+                <div class="prix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="offre swiper-slide hidden">
+            <div class="pic-offre"></div>
+            <div class="disc-offre">
+              <div class="discription"></div>
+              <div class="offre-prix">
+                <div class="supplement"></div>
+                <div class="prix"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="offre">
-          <div class="pic-offre"></div>
-          <div class="disc-offre">
-            <div class="discription"></div>
-            <div class="offre-prix">
-              <div class="supplement"></div>
-              <div class="prix"></div>
-            </div>
-          </div>
-        </div>
-        <div class="offre">
-          <div class="pic-offre"></div>
-          <div class="disc-offre">
-            <div class="discription"></div>
-            <div class="offre-prix">
-              <div class="supplement"></div>
-              <div class="prix"></div>
-            </div>
-          </div>
-        </div>
-        <div class="offre">
-          <div class="pic-offre"></div>
-          <div class="disc-offre">
-            <div class="discription"></div>
-            <div class="offre-prix">
-              <div class="supplement"></div>
-              <div class="prix"></div>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
       <div class="btn-offers hidden">
         <a href="#">A propos de nous</a>
       </div>
     </section>
-    <footer class="hidden">
+    <footer>
       <div class="all-bg bg-container-img footer-header-bg">
         <img src="./Images/big background 1.png" alt="all" />
       </div>
