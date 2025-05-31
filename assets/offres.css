@@ -312,7 +312,7 @@ footer {
 
 @media screen and (max-width: 450px) {
   body {
-    min-height: 140vh;
+    min-height: 145vh;
   }
   .section-offre h1 {
     font-size: 60px;
@@ -333,5 +333,8 @@ footer {
   }
   .btn-offers a {
     width: 246px;
+  }
+  footer {
+    height: 179px;
   }
 }
