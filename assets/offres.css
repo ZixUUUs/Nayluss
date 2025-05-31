@@ -41,6 +41,8 @@ section {
   height: auto;
 }
 header {
+  display: flex;
+  justify-content: center;
   position: relative;
   max-width: 1600px;
   height: 163px;
@@ -48,13 +50,12 @@ header {
   z-index: 7;
 }
 .logo {
+  align-self: center;
   width: 167px;
   height: 120px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 60%;
-  left: 50%;
+  position: relative;
   z-index: 9999;
+  top: 15%;
 }
 .headBg {
   max-width: 1600px;
@@ -115,7 +116,7 @@ footer {
   color: #043653;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 5;
-  top: 6%;
+  margin: 28px 1px 1px 8px;
 }
 .btn-offers {
   display: flex;
