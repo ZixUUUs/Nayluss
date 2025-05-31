@@ -121,6 +121,7 @@ footer {
   display: flex;
   position: relative;
   align-self: center;
+  top: -14%;
   z-index: 6;
 }
 
