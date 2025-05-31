@@ -38,7 +38,7 @@ section {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  height: 120vh;
+  height: auto;
 }
 header {
   position: relative;
@@ -232,7 +232,7 @@ footer {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  top: var(--swiper-pagination-top, 74%);
+  top: var(--swiper-pagination-top, 95%);
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -242,12 +242,6 @@ footer {
 @media screen and (max-width: 1400px) {
   .kayak {
     display: none;
-  }
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    top: var(--swiper-pagination-top, 85%);
   }
   .btn-offers {
     top: -2%;
@@ -292,7 +286,7 @@ footer {
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: var(--swiper-pagination-top, 90%);
+    top: var(--swiper-pagination-top, 95%);
   }
 }
 
@@ -312,7 +306,7 @@ footer {
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: var(--swiper-pagination-top, 89%);
+    top: var(--swiper-pagination-top, 96%);
   }
   .btn-offers a {
     width: 246px;
