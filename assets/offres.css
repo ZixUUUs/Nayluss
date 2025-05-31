@@ -246,6 +246,11 @@ footer {
   top: var(--swiper-navigation-top-offset, 38%);
 }
 /*responsive*/
+@media screen and (max-width: 1900px) {
+  body {
+    min-height: 141vh;
+  }
+}
 @media screen and (max-width: 1600px) {
   body {
     min-height: 137vh;
