@@ -354,6 +354,7 @@ footer {
   }
   .discription {
     padding: 16px;
+    gap: 20px;
   }
   .o-title h3 {
     font-size: 32px;
@@ -387,6 +388,34 @@ footer {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .discription {
+    gap: 15px;
+  }
+  .o-disc p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .discription {
+    gap: 18px;
+  }
+  .o-disc p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .disc-offre {
+    padding: 8px;
+  }
+  .offre-prix {
+    gap: 3px;
+  }
+  .btn-reservation button {
+    width: 73px;
+    font-size: medium;
+  }
+}
 @media screen and (max-width: 450px) {
   .section-offre h1 {
     font-size: 60px;
