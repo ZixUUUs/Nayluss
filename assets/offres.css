@@ -16,7 +16,6 @@ body {
 }
 body {
   position: relative;
-  min-height: 128vh;
 }
 
 .hidden {
@@ -346,7 +345,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 700px;
+    height: 748px;
   }
   .disc-offre {
     width: 100%;
@@ -389,9 +388,6 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  body {
-    min-height: 145vh;
-  }
   .section-offre h1 {
     font-size: 60px;
   }
@@ -402,13 +398,13 @@ footer {
     padding: 0;
   }
   .discription {
-    gap: 28px;
+    gap: 15px;
   }
   .o-title h3 {
     font-size: 26px;
   }
   .o-disc p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
   }
   .offre-prix {
