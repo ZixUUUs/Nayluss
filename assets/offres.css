@@ -237,7 +237,7 @@ footer {
   vertical-align: middle;
 }
 .o-disc p {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
@@ -263,6 +263,36 @@ footer {
   height: 100%;
   background-color: #ff995c;
   border-radius: 15px;
+}
+.btn-reservation {
+  height: 100%;
+}
+.btn-reservation button {
+  height: 100%;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #19aaee;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 12px;
+  box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  -webkit-box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  -moz-box-shadow: 8px 10px 77px -28px rgba(25, 170, 238, 0.92);
+  transition: all 0.3s ease-in-out;
+}
+.btn-reservation button:hover {
+  box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  -webkit-box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  -moz-box-shadow: 8px -27px 94px -24px rgba(25, 170, 238, 1);
+  border: 1px solid #19aaee;
+  color: #19aaee;
+  background-color: #ffffff;
 }
 /*swiper*/
 .swiper-container {
@@ -338,6 +368,11 @@ footer {
     width: 100%;
     border-radius: 5px;
   }
+  .btn-reservation button {
+    height: 100%;
+    border-radius: 15px;
+    padding: 0;
+  }
   .btn-offers {
     top: 0%;
   }
@@ -363,12 +398,27 @@ footer {
   .offre-container {
     padding: 38px;
   }
+  .disc-offre {
+    padding: 0;
+  }
+  .discription {
+    gap: 28px;
+  }
   .o-title h3 {
     font-size: 26px;
   }
   .o-disc p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 30px;
   }
+  .offre-prix {
+    gap: 5px;
+  }
+  .btn-reservation button {
+    width: 69px;
+    font-size: small;
+  }
+
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 5px);
@@ -381,7 +431,8 @@ footer {
     top: var(--swiper-pagination-top, 96%);
   }
   .btn-offers a {
-    width: 246px;
+    width: 230px;
+    font-size: small;
   }
   footer {
     height: 179px;
