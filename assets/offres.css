@@ -184,6 +184,10 @@ footer {
   box-shadow: 17px 23px 35px -6px rgba(140, 207, 237, 0.75);
   -webkit-box-shadow: 17px 23px 35px -6px rgba(140, 207, 237, 0.75);
   -moz-box-shadow: 17px 23px 35px -6px rgba(140, 207, 237, 0.75);
+  background-image: url("../Images/big background 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .offre {
   display: flex;
@@ -195,40 +199,70 @@ footer {
 }
 .pic-offre {
   flex-grow: 0;
-  background-color: grey;
   height: 100%;
   width: 40%;
   border-radius: 5px;
+}
+.pic-offre-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 15px;
+  z-index: 1;
+}
+.pic-offre-container img {
+  border-radius: 16px;
 }
 .disc-offre {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  background-color: rgb(49, 140, 214);
 }
 .discription {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
   width: 100%;
   height: 80%;
-  background-color: rgb(63, 0, 237);
   border-radius: 5px;
+  padding: 56px 115px 15px 37px;
+}
+.o-title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-align: left;
+  vertical-align: middle;
+}
+.o-disc p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 10%;
+  vertical-align: middle;
 }
 .offre-prix {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   width: 100%;
   height: 20%;
   border-radius: 5px;
-  background-color: red;
 }
 .supplement {
   width: 70%;
   height: 100%;
-  background-color: bisque;
+  background-color: #19aaee;
+  border-radius: 15px;
 }
 .prix {
   width: 30%;
   height: 100%;
-  background-color: burlywood;
+  background-color: #ff995c;
+  border-radius: 15px;
 }
 /*swiper*/
 .swiper-container {
@@ -246,28 +280,29 @@ footer {
   top: var(--swiper-navigation-top-offset, 38%);
 }
 /*responsive*/
-@media screen and (max-width: 1900px) {
-  body {
-    min-height: 141vh;
-  }
-}
-@media screen and (max-width: 1600px) {
-  body {
-    min-height: 137vh;
-  }
-}
 @media screen and (max-width: 1400px) {
   .kayak {
     display: none;
+  }
+  .o-disc p {
+    font-size: 30px;
   }
   .btn-offers {
     top: -2%;
   }
 }
-@media screen and (max-width: 990px) {
-  body {
-    min-height: 146vh;
+@media screen and (max-width: 1200px) {
+  .discription {
+    padding: 56px 20px 15px 37px;
   }
+  .o-title h3 {
+    font-size: 35px;
+  }
+  .o-disc p {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 990px) {
   .headBg {
     width: 100%;
   }
@@ -288,10 +323,18 @@ footer {
     height: 60%;
     padding: 12px;
   }
+  .discription {
+    padding: 16px;
+  }
+  .o-title h3 {
+    font-size: 32px;
+  }
+  .o-disc p {
+    font-size: 24px;
+  }
   .pic-offre {
     flex-grow: 0;
-    background-color: grey;
-    height: 40%;
+    height: 45%;
     width: 100%;
     border-radius: 5px;
   }
@@ -319,6 +362,12 @@ footer {
   }
   .offre-container {
     padding: 38px;
+  }
+  .o-title h3 {
+    font-size: 26px;
+  }
+  .o-disc p {
+    font-size: 18px;
   }
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {

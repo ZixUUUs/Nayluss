@@ -17,12 +17,13 @@
     <script src="../assets/swiper.js" defer></script>
   </head>
   <body>
-    <div class="all-bg bg-container-img">
-      <img src="../Images/big background 1.png" alt="all" />
-    </div>
     <header class="hidden">
       <div class="headBg bg-container-img footer-header-bg">
-        <img src="../Images/bleu background 1.png" alt="headBg" />
+        <img
+          src="../Images/bleu background 1.png"
+          alt="headBg"
+          loading="eager"
+        />
         <div class="kayak bg-container-img">
           <img src="../Images/kayak mini 1.png" alt="Kayak" />
         </div>
@@ -33,7 +34,43 @@
       <div class="offre-container swiper">
         <div class="swiper-wrapper">
           <div class="offre swiper-slide hidden">
-            <div class="pic-offre"></div>
+            <div class="pic-offre">
+              <div class="pic-offre-container bg-container-img">
+                <img
+                  src="../Images/kayakOffre.png"
+                  alt="Kayak"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="disc-offre">
+              <div class="discription">
+                <div class="o-title">
+                  <h3>Sortie kayak solo</h3>
+                </div>
+                <div class="o-disc">
+                  <p>
+                    Explorez les eaux à votre rythme avec un kayak monoplace.
+                    Idéal pour se reconnecter à la nature en toute liberté.
+                  </p>
+                </div>
+              </div>
+              <div class="offre-prix">
+                <div class="supplement"></div>
+                <div class="prix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="offre swiper-slide hidden">
+            <div class="pic-offre">
+              <div class="pic-offre-container bg-container-img">
+                <img
+                  src="../Images/PalngrotOffre.png"
+                  alt="peches"
+                  loading="lazy"
+                />
+              </div>
+            </div>
             <div class="disc-offre">
               <div class="discription"></div>
               <div class="offre-prix">
@@ -43,7 +80,11 @@
             </div>
           </div>
           <div class="offre swiper-slide hidden">
-            <div class="pic-offre"></div>
+            <div class="pic-offre">
+              <div class="pic-offre-container bg-container-img">
+                <img src="../Images/Barques.png" alt="Barques" loading="lazy" />
+              </div>
+            </div>
             <div class="disc-offre">
               <div class="discription"></div>
               <div class="offre-prix">
@@ -53,17 +94,15 @@
             </div>
           </div>
           <div class="offre swiper-slide hidden">
-            <div class="pic-offre"></div>
-            <div class="disc-offre">
-              <div class="discription"></div>
-              <div class="offre-prix">
-                <div class="supplement"></div>
-                <div class="prix"></div>
+            <div class="pic-offre">
+              <div class="pic-offre-container bg-container-img">
+                <img
+                  src="../Images/bivouacMarin.png"
+                  alt="Bivouac"
+                  loading="lazy"
+                />
               </div>
             </div>
-          </div>
-          <div class="offre swiper-slide hidden">
-            <div class="pic-offre"></div>
             <div class="disc-offre">
               <div class="discription"></div>
               <div class="offre-prix">
