@@ -314,7 +314,7 @@ footer {
     display: none;
   }
   .o-disc p {
-    font-size: 30px;
+    font-size: 28px;
   }
   .btn-offers {
     top: -2%;
@@ -328,7 +328,7 @@ footer {
     font-size: 35px;
   }
   .o-disc p {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 990px) {
