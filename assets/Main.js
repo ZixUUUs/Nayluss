@@ -9,3 +9,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElem = document.querySelectorAll(".hidden");
 hiddenElem.forEach((el) => observer.observe(el));
+// slimselect //
+new SlimSelect({
+  select: "#multiple",
+});

@@ -252,11 +252,54 @@ footer {
   border-radius: 5px;
 }
 .supplement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 70%;
   height: 100%;
   background-color: #19aaee;
   border-radius: 15px;
 }
+.select-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: #ffffff;
+  height: 80%;
+  border-radius: 100px;
+}
+.select-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.select-container label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+}
+.select-container select {
+  width: 40%;
+
+  text-align: center;
+  align-self: center;
+  box-shadow: 10px 10px 63px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 63px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 63px -13px rgba(0, 0, 0, 0.75);
+  height: 20px;
+  border: none;
+  border-radius: 100px;
+  padding: 0;
+  background-color: #19aaee;
+  color: #ffffff;
+}
+
 .prix {
   width: 30%;
   height: 100%;
@@ -355,6 +398,7 @@ footer {
   .discription {
     padding: 16px;
     gap: 20px;
+    padding-bottom: 43px;
   }
   .o-title h3 {
     font-size: 32px;
