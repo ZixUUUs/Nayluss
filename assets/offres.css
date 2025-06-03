@@ -32,6 +32,23 @@ body {
 a:visited {
   text-decoration: none;
 }
+li {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+  background-color: #19aaee;
+  border-radius: 100px;
+  width: 100px;
+  text-align: center;
+}
+li button {
+  border: none;
+  background-color: none;
+  background-color: #19aaee;
+}
 section {
   position: relative;
   display: flex;
@@ -254,7 +271,7 @@ footer {
 .supplement {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 70%;
   height: 100%;
@@ -263,19 +280,20 @@ footer {
 }
 .select-div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 95%;
   background-color: #ffffff;
   height: 80%;
-  border-radius: 100px;
+  border-radius: 15px;
+  padding-top: 15px;
 }
 .select-container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   gap: 5px;
 }
 .select-container label {
@@ -284,9 +302,19 @@ footer {
   font-size: 16px;
   line-height: 36px;
 }
+.display-option {
+  align-self: center;
+  width: 85%;
+  padding: 10px 0 0 0;
+}
+.display-option ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 .select-container select {
   width: 40%;
-
   text-align: center;
   align-self: center;
   box-shadow: 10px 10px 63px -13px rgba(0, 0, 0, 0.75);
@@ -356,11 +384,34 @@ footer {
   .kayak {
     display: none;
   }
+  .offre {
+    height: 630px;
+  }
+  .offre-prix {
+    height: 25%;
+  }
   .o-disc p {
     font-size: 28px;
   }
   .btn-offers {
     top: -2%;
+  }
+  .display-option ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  li {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    width: 120px;
+  }
+  .btn-reservation button {
+    border-radius: 15px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -373,6 +424,11 @@ footer {
   .o-disc p {
     font-size: 24px;
   }
+  .display-option ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 990px) {
   .headBg {
@@ -384,11 +440,14 @@ footer {
   .section-offre h1 {
     font-size: 80px;
   }
+  .offre-prix {
+    height: 30%;
+  }
   .offre {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    height: 748px;
+    height: 875px;
   }
   .disc-offre {
     width: 100%;
@@ -411,6 +470,31 @@ footer {
     height: 45%;
     width: 100%;
     border-radius: 5px;
+  }
+  .select-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 98%;
+    background-color: #ffffff;
+    height: 80%;
+    border-radius: 15px;
+    padding-top: 10px;
+  }
+  .display-option ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 0.1rem;
+  }
+
+  li {
+    place-self: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    width: 74px;
   }
   .btn-reservation button {
     height: 100%;
@@ -440,6 +524,14 @@ footer {
     font-size: 18px;
     line-height: 30px;
   }
+  .select-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+  }
 }
 @media screen and (max-width: 680px) {
   .discription {
@@ -458,6 +550,23 @@ footer {
   .btn-reservation button {
     width: 73px;
     font-size: medium;
+  }
+  .select-container select {
+    width: 83%;
+  }
+
+  .display-option ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+    gap: 0.6rem;
+
+    height: 50px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  .display-option ul li {
+    scroll-snap-align: start;
   }
 }
 @media screen and (max-width: 450px) {
@@ -483,6 +592,9 @@ footer {
   .offre-prix {
     gap: 5px;
   }
+  .prix {
+    width: 40%;
+  }
   .btn-reservation button {
     width: 69px;
     font-size: small;
@@ -505,5 +617,20 @@ footer {
   }
   footer {
     height: 179px;
+  }
+  .ticker-text {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+    animation: slide-left 30s linear infinite;
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
