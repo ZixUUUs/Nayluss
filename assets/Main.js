@@ -1,6 +1,5 @@
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
@@ -10,33 +9,58 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElem = document.querySelectorAll(".hidden");
 hiddenElem.forEach((el) => observer.observe(el));
 
-// select behavior and display option //
-const select = document.querySelector("#supplement");
-const options = document.querySelectorAll("option");
-const displayOption = document.querySelector(".display-option ul");
+// select options behaviour and price update //
 
 function getOpt() {
-  select.addEventListener("change", (event) => {
-    const selectedValue = event.target.value;
-    console.log(selectedValue);
+  const selects = document.querySelectorAll(".supplement-select");
 
-    const list = document.createElement("li");
-    list.textContent = selectedValue;
-    const closeBtn = document.createElement("button");
-    closeBtn.textContent = "X";
-    list.appendChild(closeBtn);
-    displayOption.appendChild(list);
+  selects.forEach((select) => {
+    const selectContainer = select.closest(".select-container");
+    const offrePrix = selectContainer.closest(".offre-prix");
+    const displayOption = selectContainer.querySelector(".display-option ul");
+    const prix = offrePrix.querySelector(".prix h4");
 
-    const selectedOption = select.querySelector(
-      `option[value="${selectedValue}"]`
-    );
-    selectedOption.disabled = true;
+    let totalPrix = Number(prix.textContent) || 0;
 
-    closeBtn.addEventListener("click", () => {
-      list.remove();
+    function updatePrix() {
+      prix.textContent = totalPrix;
+    }
 
-      selectedOption.disabled = false;
+    select.addEventListener("change", (event) => {
+      const selectedValue = event.target.value;
+      const selectedOption = select.querySelector(
+        `option[value="${selectedValue}"]`
+      );
+      const prixSupplement = selectedOption
+        ? Number(selectedOption.dataset.price) || 0
+        : 0;
+
+      const list = document.createElement("li");
+      list.textContent = selectedValue + " ";
+      list.dataset.price = prixSupplement;
+
+      const closeBtn = document.createElement("button");
+      closeBtn.textContent = "X";
+      list.appendChild(closeBtn);
+      displayOption.appendChild(list);
+
+      if (selectedOption) selectedOption.disabled = true;
+
+      totalPrix += prixSupplement;
+      updatePrix();
+
+      closeBtn.addEventListener("click", () => {
+        list.remove();
+        if (selectedOption) selectedOption.disabled = false;
+
+        totalPrix -= prixSupplement;
+        updatePrix();
+      });
+
+      select.value = "";
     });
+
+    updatePrix();
   });
 }
-getOpt();
+document.addEventListener("DOMContentLoaded", getOpt);

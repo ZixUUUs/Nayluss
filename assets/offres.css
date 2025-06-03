@@ -333,6 +333,18 @@ footer {
   height: 100%;
   background-color: #ff995c;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+.prix h4 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 400;
 }
 .btn-reservation {
   height: 100%;
@@ -617,20 +629,5 @@ footer {
   }
   footer {
     height: 179px;
-  }
-  .ticker-text {
-    white-space: nowrap;
-    display: inline-block;
-    padding-left: 100%;
-    animation: slide-left 30s linear infinite;
-  }
-
-  @keyframes slide-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
   }
 }
