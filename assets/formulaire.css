@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 1600px;
+  height: 163px;
+  margin: 0 auto;
+  z-index: 7;
+}
+.headBg {
+  max-width: 1600px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.kayak {
+  max-width: 100%;
+  width: 275px;
+  height: 300px;
+  position: absolute;
+  top: -58px;
+  right: 115px;
+  z-index: 6;
+}
+footer {
+  position: relative;
+  max-width: 1600px;
+  height: 163px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.green-footer {
+  width: 1600px;
+  max-width: 1600px;
+  height: 180px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+.bg-container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*form*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: max-content;
+  background-color: rgb(0 0 0 / 56%);
+  border-radius: 15px;
+  padding: 80px;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+}
+form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: 400;
+}
+form input {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  width: 430px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 0 20px;
+  border: none;
+}
