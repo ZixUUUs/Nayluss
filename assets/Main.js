@@ -26,6 +26,25 @@ function getOpt() {
       prix.textContent = totalPrix;
     }
 
+    function saveToLocalStorage() {
+      const wrapper = offrePrix.closest(".disc-offre");
+      const offreName = wrapper.querySelector(".o-title h3").textContent;
+
+      const selectedSupplements = Array.from(
+        displayOption.querySelectorAll("li")
+      ).map((li) => ({
+        name: li.firstChild.textContent.trim(),
+        price: Number(li.dataset.price),
+      }));
+
+      const offreData = {
+        offreName,
+        totalPrix,
+        supplements: selectedSupplements,
+      };
+      localStorage.setItem("offreSelectionnee", JSON.stringify(offreData));
+    }
+
     select.addEventListener("change", (event) => {
       const selectedValue = event.target.value;
       const selectedOption = select.querySelector(
@@ -48,6 +67,7 @@ function getOpt() {
 
       totalPrix += prixSupplement;
       updatePrix();
+      saveToLocalStorage();
 
       closeBtn.addEventListener("click", () => {
         list.remove();
@@ -55,12 +75,22 @@ function getOpt() {
 
         totalPrix -= prixSupplement;
         updatePrix();
+        saveToLocalStorage();
       });
 
       select.value = "";
     });
 
     updatePrix();
+    saveToLocalStorage();
+    const reserveBtn = offrePrix.querySelector(".btn-reservation");
+    if (reserveBtn) {
+      reserveBtn.addEventListener("click", () => {
+        saveToLocalStorage();
+        window.location.href = "formulaire.html";
+      });
+    }
   });
 }
+
 document.addEventListener("DOMContentLoaded", getOpt);
