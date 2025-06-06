@@ -39,7 +39,8 @@ li {
   font-size: 16px;
   font-weight: 300;
   list-style: none;
-  background-color: #19aaee;
+  background-color: #ffffff;
+  color: black;
   border-radius: 100px;
   width: 100px;
   text-align: center;
@@ -47,7 +48,7 @@ li {
 li button {
   border: none;
   background-color: none;
-  background-color: #19aaee;
+  color: #19aaee;
 }
 section {
   position: relative;
@@ -283,7 +284,6 @@ footer {
   justify-content: flex-start;
   align-items: center;
   width: 95%;
-  background-color: #ffffff;
   height: 80%;
   border-radius: 15px;
   padding-top: 15px;
@@ -324,8 +324,8 @@ footer {
   border: none;
   border-radius: 100px;
   padding: 0;
-  background-color: #19aaee;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: black;
 }
 
 .prix {
@@ -505,8 +505,8 @@ footer {
     justify-content: space-around;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
-    padding: 5px;
-    width: 74px;
+    padding: 6px;
+    width: auto;
   }
   .btn-reservation button {
     height: 100%;
@@ -557,28 +557,78 @@ footer {
     padding: 8px;
   }
   .offre-prix {
-    gap: 3px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 0 100% 0;
+    height: 35%;
+    row-gap: 20px;
+    column-gap: 0;
   }
+
+  .supplement {
+    grid-row: 1/2;
+    place-self: center;
+    grid-column: 2/3;
+  }
+  .prix {
+    width: 35%;
+    grid-row: 2/3;
+    justify-self: self-start;
+    grid-column: 2/3;
+    margin-left: 18px;
+    height: 70%;
+    font-size: 16px;
+  }
+
+  .btn-reservation {
+    grid-row: 2/3;
+    justify-self: flex-end;
+    grid-column: 2/3;
+    width: 35%;
+    margin-right: 12px;
+  }
+
   .btn-reservation button {
-    width: 73px;
-    font-size: medium;
+    width: 100%;
+    font-size: 16px;
+    height: 70%;
   }
+
   .select-container select {
     width: 83%;
   }
 
+  .select-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 98%;
+    background-color: #19aaee;
+    height: 80%;
+    border-radius: 15px;
+    padding-top: 0px;
+  }
   .display-option ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
-    gap: 0.6rem;
-
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
     height: 50px;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
   .display-option ul li {
     scroll-snap-align: start;
+  }
+  li {
+    place-self: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding: 6px;
+    width: auto;
+    gap: 14px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -587,6 +637,9 @@ footer {
   }
   .offre-container {
     padding: 38px;
+  }
+  .offre {
+    height: 912px;
   }
   .disc-offre {
     padding: 0;
@@ -600,16 +653,6 @@ footer {
   .o-disc p {
     font-size: 14px;
     line-height: 30px;
-  }
-  .offre-prix {
-    gap: 5px;
-  }
-  .prix {
-    width: 40%;
-  }
-  .btn-reservation button {
-    width: 69px;
-    font-size: small;
   }
 
   .swiper-button-next,
