@@ -312,6 +312,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  gap: 5px;
 }
 .select-container select {
   width: 40%;
@@ -339,6 +340,7 @@ footer {
   gap: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: medium;
+  transition: all 0.3s ease;
 }
 .prix h4 {
   text-align: center;
@@ -488,7 +490,6 @@ footer {
     justify-content: flex-start;
     align-items: center;
     width: 98%;
-    background-color: #ffffff;
     height: 80%;
     border-radius: 15px;
     padding-top: 10px;
@@ -496,7 +497,7 @@ footer {
   .display-option ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-    gap: 0.1rem;
+    gap: 0.4rem;
   }
 
   li {
@@ -506,7 +507,8 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     padding: 6px;
-    width: auto;
+    gap: 6px;
+    width: 80px;
   }
   .btn-reservation button {
     height: 100%;
@@ -536,6 +538,9 @@ footer {
     font-size: 18px;
     line-height: 30px;
   }
+  .offre-prix {
+    gap: 5px;
+  }
   .select-container {
     width: 100%;
     height: 100%;
@@ -543,6 +548,24 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     gap: 0px;
+  }
+  .display-option ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+    height: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  li {
+    width: 79px;
+  }
+  .btn-reservation button {
+    font-size: 18px;
+  }
+  .prix h4 {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -608,15 +631,7 @@ footer {
     border-radius: 15px;
     padding-top: 0px;
   }
-  .display-option ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0.8rem;
-    height: 50px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
+
   .display-option ul li {
     scroll-snap-align: start;
   }
