@@ -121,7 +121,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../Images/formulaire.jpeg");
+  background-image: url("../Images/formulaire.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(3px);
