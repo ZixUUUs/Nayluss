@@ -36,7 +36,8 @@ li {
   font-size: 16px;
   font-weight: 300;
   list-style: none;
-  background-color: #19aaee;
+  background-color: #ffffff;
+  color: #043653;
   border-radius: 100px;
   width: 100px;
   text-align: center;
@@ -44,7 +45,6 @@ li {
 li button {
   border: none;
   background-color: none;
-  background-color: #19aaee;
 }
 section {
   position: relative;
@@ -55,7 +55,7 @@ section {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  height: 96vh;
+  height: 108vh;
   gap: 20px;
 }
 header {
@@ -132,6 +132,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .btn-container nav a {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -163,6 +164,8 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: larger;
   font-weight: 400;
+  text-align: center;
+  color: #ffffff;
 }
 .formulaire-sec h1 {
   position: relative;
@@ -272,12 +275,12 @@ form input {
   position: relative;
   font-family: "Satisfy", cursive;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
-  color: #043653;
+  color: #ffffff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 5;
 }
@@ -297,11 +300,28 @@ form input {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 /*responsive*/
+@media screen and (max-width: 1600px) {
+  .form-container {
+    height: 560px;
+    padding: 60px;
+  }
+  .total-offre h3 {
+    font-size: 1.3rem;
+  }
+  .offre-recap .total-offre {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .form-container {
     padding: 40px;
+  }
+  .offre-recap .total-offre {
+    width: 70%;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -312,10 +332,23 @@ form input {
     padding: 16px 18px;
     font-size: 18px;
   }
+  .offre-recap .total-offre {
+    width: 90%;
+  }
+  .total-offre h3 {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 990px) {
+  .form-container {
+    height: 760px;
+    padding: 60px;
+  }
   section {
     height: 120vh;
+  }
+  .offre-recap .total-offre {
+    width: 60%;
   }
   .form-container {
     padding: 20px;
@@ -331,5 +364,73 @@ form input {
     gap: 20px;
     color: #ffffff;
     z-index: 3;
+  }
+  .offre-recap h2 {
+    color: #043653;
+  }
+  .btn-container nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 776px) {
+  .formulaire-sec h1 {
+    font-size: 86px;
+  }
+  .info-contianer {
+    width: 95%;
+  }
+  .info-contianer p {
+    font-size: 16px;
+  }
+  .btn-container nav a {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  form label {
+    font-size: 16px;
+  }
+  form input::placeholder {
+    font-size: 16px;
+  }
+  .total-offre h3 {
+    font-size: 1.2rem;
+  }
+  .submit-btn {
+    font-size: 16px;
+  }
+  .offre-recap .total-offre {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .formulaire-sec h1 {
+    font-size: 68px;
+  }
+  .info-contianer p {
+    padding: 5px;
+    font-size: 16px;
+  }
+  li {
+    font-size: 14px;
+  }
+  form input {
+    max-width: 100%;
+  }
+  .btn-container nav {
+    width: 100%;
+  }
+  .btn-container nav a {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .offre-recap h2 {
+    font-size: 28px;
+  }
+  .total-offre h3 {
+    font-size: 1.1rem;
   }
 }
