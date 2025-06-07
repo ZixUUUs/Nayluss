@@ -94,3 +94,13 @@ function getOpt() {
 }
 
 document.addEventListener("DOMContentLoaded", getOpt);
+
+const params = new URLSearchParams(window.location.search);
+if (params.get("success") === "true") {
+  const overlay = document.querySelector(".overlay");
+  overlay.style.display = "flex";
+
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 5000);
+}
