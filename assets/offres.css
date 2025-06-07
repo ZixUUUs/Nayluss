@@ -341,6 +341,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: medium;
   transition: all 0.3s ease;
+  color: #ffffff;
 }
 .prix h4 {
   text-align: center;
@@ -498,6 +499,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     gap: 0.4rem;
+    column-gap: 1rem;
   }
 
   li {
